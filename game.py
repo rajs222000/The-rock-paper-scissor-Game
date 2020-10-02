@@ -1,20 +1,18 @@
 import random
 
 while True:
-    comp_list = ["Rock","rock","Paper","paper","Scissor","scissor"]
+    klist = ["Rock","rock","Paper","paper","Scissor","scissor"]
     user = input("Welcome, please choose an option :").capitalize()
-    if user in comp_list:
+    if user in klist:
         pass
     else:
         print("You have written a wrong input ")
         continue
-    comp = random.choice(comp_list)
+    comp = random.choice(klist)
     
-    #print
     print(f"You choose {user}")
     print(f"Computer choose {comp}")
     
-    #main
     if user == "Rock" and comp == "Scissor":
         print("You Won!")
     elif user == "Rock" and comp == "Paper":
